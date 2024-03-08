@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  node_app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node-jenkins-image
+    ports:
+      - "8081:80"
+    restart: always
